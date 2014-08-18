@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lpp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btCreateMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:drawableRight="@android:drawable/ic_input_add"
+            android:text="Create Record"
+            tools:ignore="NewApi" />
+
+        <Button
+            android:id="@+id/btnViewRecordMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/holo_green_light"
+            android:drawableLeft="@android:drawable/ic_input_get"
+            android:drawableRight="@android:drawable/ic_input_get"
+            android:text="View Record"
+            tools:ignore="NewApi" />
+
+        <Button
+            android:id="@+id/btnSetAlarmMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/holo_orange_dark"
+            android:drawableLeft="@android:drawable/ic_popup_reminder"
+            android:drawableRight="@android:drawable/ic_popup_reminder"
+            android:text="Set Alarm"
+            tools:ignore="NewApi" />
+
+        <Button
+            android:id="@+id/btnCancelAlarmMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/holo_orange_dark"
+            android:drawableLeft="@android:drawable/ic_popup_reminder"
+            android:drawableRight="@android:drawable/ic_popup_reminder"
+            android:text="Cancel Alarm"
+            tools:ignore="NewApi" />
+
+ </LinearLayout>
+ </LinearLayout>

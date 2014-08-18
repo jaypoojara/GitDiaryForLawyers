@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_create_new_record.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res/layout/activity_create_new_record.xml" />
+    </issue>
+    <issue id="InlinedApi">
+        <ignore path="src/com/rhmc/diaryforlawyers/MainActivity.java" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/activity_create_new_record.xml" />
+    </issue>
+</lint>

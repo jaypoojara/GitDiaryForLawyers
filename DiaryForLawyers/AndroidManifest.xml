@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rhmc.diaryforlawyers"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/logo48"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.rhmc.diaryforlawyers.MainActivity"
+            android:label="@string/app_name" 
+            >
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.CreateNewRecord"
+            android:label="@string/title_activity_create_new_record" 
+            >
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.ViewRecord"
+            android:label="@string/title_activity_view_record" 
+            >
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.ViewTodayRecordList"
+            android:label="@string/title_activity_view_today_record_list" 
+            >
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.ViewAllRecordList"
+            android:label="@string/title_activity_view_all_record_list" 
+            >
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.EditRecord"
+            android:label="@string/title_activity_edit_record" 
+            >
+        </activity>
+
+        <service android:name="MyAlarmService" >
+        </service>
+
+        <activity android:name="com.rhmc.diaryforlawyers.MyAlarm" 
+            		android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.PlayListActivity"
+            android:label="@string/title_activity_play_list">
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.PasswordMain"
+            android:label="@string/app_name" 
+            android:clearTaskOnLaunch="true"
+            >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.SetPassword"
+            android:label="@string/title_activity_set_password" 
+            >
+        </activity>
+        <activity
+            android:name="com.rhmc.diaryforlawyers.ChangePass"
+            android:label="@string/title_activity_change_pass" 
+            >
+        </activity>
+        <receiver android:name="MyReceiver"></receiver>
+    </application>
+
+</manifest>
